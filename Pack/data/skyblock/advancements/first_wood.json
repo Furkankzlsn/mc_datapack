@@ -1,0 +1,19 @@
+{
+  "display": {
+    "title": "İlk Ağaç",
+    "description": "16 Oak Log topladınız",
+    "icon": {
+      "item": "minecraft:oak_log"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "skyblock:root"
+}
