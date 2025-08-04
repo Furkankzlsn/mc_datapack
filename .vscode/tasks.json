@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Package Datapack",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"Compress-Archive -Path .\\* -DestinationPath .\\datapack.zip -Force; Write-Host 'Datapack packaged as datapack.zip' -ForegroundColor Green"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

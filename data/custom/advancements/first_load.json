@@ -1,0 +1,21 @@
+{
+  "display": {
+    "title": "Welcome to Custom Datapack",
+    "description": "Successfully loaded the custom datapack!",
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "custom:welcome"
+  }
+}
