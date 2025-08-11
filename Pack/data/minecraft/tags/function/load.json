@@ -1,5 +1,6 @@
 {
   "values": [
+    "ornek:worldgen/init",
     "ornek:giris"
   ]
 }

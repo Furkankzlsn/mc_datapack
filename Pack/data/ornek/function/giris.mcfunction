@@ -2,6 +2,7 @@ scoreboard objectives add join_flag dummy "İlk Giriş"
 scoreboard objectives add kit_flag dummy "Başlangıç Kiti"
 scoreboard objectives add book_flag dummy "Rehber Kitap"
 scoreboard objectives add quest_stage dummy "Görev Aşaması"
+scoreboard objectives add island_flag dummy "Ada"
 # Düzeltildi: iki nokta yerine kategori:namespace.id formatı
 scoreboard objectives add oaklog minecraft.mined:minecraft.oak_log "Odun"
 scoreboard objectives add cobble minecraft.mined:minecraft.cobblestone "Cobble"
@@ -25,3 +26,6 @@ scoreboard players reset "10_Odun_Kir" quest_board
 scoreboard players reset 10_Odun_Kir quest_board
 scoreboard players reset "20_Cobble_Kir" quest_board
 scoreboard players reset 20_Cobble_Kir quest_board
+
+# Ada oluşturma çağrısı kaldırıldı; her tick güvenli kontrol yapılacak
+# (create_island artık tick içinde çalışacak)

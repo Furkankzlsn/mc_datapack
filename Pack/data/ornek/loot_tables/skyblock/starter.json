@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    { "rolls": 1, "entries": [ { "type": "minecraft:item", "name": "minecraft:lava_bucket" } ] },
+    { "rolls": 1, "entries": [ { "type": "minecraft:item", "name": "minecraft:water_bucket" } ] },
+    { "rolls": 1, "entries": [ { "type": "minecraft:item", "name": "minecraft:oak_sapling" } ] },
+    { "rolls": 1, "entries": [ { "type": "minecraft:item", "name": "minecraft:bone_meal", "functions": [ { "function": "minecraft:set_count", "count": 2 } ] } ] },
+    { "rolls": 1, "entries": [ { "type": "minecraft:item", "name": "minecraft:melon_slice", "functions": [ { "function": "minecraft:set_count", "count": 8 } ] } ] }
+  ]
+}
