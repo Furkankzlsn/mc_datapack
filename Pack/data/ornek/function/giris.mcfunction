@@ -9,6 +9,7 @@ scoreboard objectives add cobble minecraft.mined:minecraft.cobblestone "Cobble"
 scoreboard objectives add stone_stat minecraft.mined:minecraft.stone "Stone"
 scoreboard objectives add cobble_prog dummy "ToplamTaş"
 scoreboard objectives add quest_board dummy "Görev"
+scoreboard objectives add mob_proc dummy "MobProc"
 
 # Bossbar kaldır (varsa)
 bossbar remove ornek:quest

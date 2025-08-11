@@ -24,3 +24,6 @@ scoreboard players reset cobble_prog quest_board
 execute as @a[scores={quest_stage=1}] run scoreboard players operation 20_Cobble_Kir quest_board = @s cobble
 execute as @a[scores={quest_stage=1}] run scoreboard players operation 20_Cobble_Kir quest_board += @s stone_stat
 execute as @a[scores={quest_stage=1}] if score 20_Cobble_Kir quest_board matches 20.. run function ornek:quests/cobble20_complete
+
+# Özel dirt skeleton drop işle
+execute as @e[type=skeleton,tag=ornek_dirt_skel,nbt={DeathTime:1s}] unless score @s mob_proc matches 1.. run function ornek:mobs/dirt_skel_drop
