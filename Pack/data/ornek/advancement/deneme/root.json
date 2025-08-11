@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_sword",
+      "count": 1
+    },
+    "title": {
+      "text": "Başlangıç Paketi",
+      "bold": true
+    },
+    "description": "Sunucu başlangıç ilerlemeleri",
+    "background": "minecraft:textures/block/netherite_block.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "root": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
