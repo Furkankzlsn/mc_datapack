@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:oak_log", "count": 1 },
     "title": { "text": "İlk Görevini Tamamladın", "color": "gold", "bold": true },
-    "description": { "text": "10 adet odun görevini bitirdin." },
+    "description": { "text": "5 adet odun görevini bitirdin." },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

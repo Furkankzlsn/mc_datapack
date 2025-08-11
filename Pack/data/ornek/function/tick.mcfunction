@@ -15,9 +15,9 @@ execute as @a unless score @s book_flag matches 1.. run scoreboard players set @
 # Eğer quest_stage yoksa 0 yap (ilk görev otomatik)
 execute as @a unless score @s quest_stage matches 0.. run scoreboard players set @s quest_stage 0
 
-# Görev 1: 10 Odun (quest_stage=0)
-execute as @a[scores={quest_stage=0}] run scoreboard players operation 10_Odun_Kir quest_board = @s oaklog
-execute as @a[scores={quest_stage=0,oaklog=10..}] run function ornek:quests/wood10_complete
+# Görev 1: 5 Odun (quest_stage=0)
+execute as @a[scores={quest_stage=0}] run scoreboard players operation 5_Odun_Kir quest_board = @s oaklog
+execute as @a[scores={quest_stage=0,oaklog=5..}] run function ornek:quests/wood10_complete
 
 # Görev 2: 20 Cobble (quest_stage=1) – stone + cobble birleşik
 scoreboard players reset cobble_prog quest_board
