@@ -4,6 +4,9 @@ scoreboard objectives add book_flag dummy "Rehber Kitap"
 scoreboard objectives add quest_stage dummy "Görev Aşaması"
 # Düzeltildi: iki nokta yerine kategori:namespace.id formatı
 scoreboard objectives add oaklog minecraft.mined:minecraft.oak_log "Odun"
+scoreboard objectives add cobble minecraft.mined:minecraft.cobblestone "Cobble"
+scoreboard objectives add stone_stat minecraft.mined:minecraft.stone "Stone"
+scoreboard objectives add cobble_prog dummy "ToplamTaş"
 scoreboard objectives add quest_board dummy "Görev"
 
 # Bossbar kaldır (varsa)
@@ -20,4 +23,5 @@ scoreboard players reset ODN_SLASH10 quest_board
 scoreboard players reset Odun quest_board
 scoreboard players reset "10_Odun_Kir" quest_board
 scoreboard players reset 10_Odun_Kir quest_board
-scoreboard players reset 10OdunKir quest_board
+scoreboard players reset "20_Cobble_Kir" quest_board
+scoreboard players reset 20_Cobble_Kir quest_board

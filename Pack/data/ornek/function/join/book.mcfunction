@@ -1,6 +1,4 @@
 # İlk giriş rehber kitabı verme
-# Debug satırı: çalıştığını görmek için
-say [ornek:join/book] Kitap fonksiyonu çalıştı
 
 # 1.21+ written book için item component kullanımı
 # Not: Eski NBT (title:"...",author:"...",pages:["..."]) bazı sürümlerde çalışmayabilir.

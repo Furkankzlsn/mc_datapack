@@ -1,0 +1,16 @@
+{
+  "parent": "ornek:deneme/first_quest",
+  "display": {
+    "icon": { "id": "minecraft:cobblestone", "count": 1 },
+    "title": { "text": "Sınırsız Taş", "color": "gold", "bold": true },
+    "description": { "text": "Cobblestone generation tamamladın!!." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "unlock": { "trigger": "minecraft:impossible" }
+  },
+  "requirements": [ [ "unlock" ] ]
+}
