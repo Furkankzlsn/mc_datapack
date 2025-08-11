@@ -1,2 +1,2 @@
 scoreboard objectives add join_flag dummy "İlk Giriş"
-advancement grant @a only ornek:root
+scoreboard objectives add kit_flag dummy "Başlangıç Kiti"
