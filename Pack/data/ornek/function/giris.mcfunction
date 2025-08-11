@@ -6,10 +6,18 @@ scoreboard objectives add quest_stage dummy "Görev Aşaması"
 scoreboard objectives add oaklog minecraft.mined:minecraft.oak_log "Odun"
 scoreboard objectives add quest_board dummy "Görev"
 
-# Sidebar (geçici devre dışı bırakılabilir) - kaldırmak istersen bu satırı sil
-# scoreboard objectives setdisplay sidebar quest_board
+# Bossbar kaldır (varsa)
+bossbar remove ornek:quest
 
-# Bossbar (görev ilerleme çubuğu) oluştur (varsa hata yoksayılır)
-bossbar add ornek:quest "Görev"
-bossbar set ornek:quest max 10
-bossbar set ornek:quest players @a
+# Sidebar aktif
+scoreboard objectives setdisplay sidebar quest_board
+
+# Temizlik: olası eski satırlar
+scoreboard players reset SKYBLOCK quest_board
+scoreboard players reset ====GOREV==== quest_board
+scoreboard players reset ODN quest_board
+scoreboard players reset ODN_SLASH10 quest_board
+scoreboard players reset Odun quest_board
+scoreboard players reset "10_Odun_Kir" quest_board
+scoreboard players reset 10_Odun_Kir quest_board
+scoreboard players reset 10OdunKir quest_board

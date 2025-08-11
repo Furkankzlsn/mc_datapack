@@ -7,15 +7,11 @@ execute as @a unless score @s book_flag matches 1.. run tellraw @s {"text":"[DEB
 execute as @a unless score @s book_flag matches 1.. run function ornek:join/book
 execute as @a unless score @s book_flag matches 1.. run scoreboard players set @s book_flag 1
 
-# Görev Bossbar güncelle (quest_stage 0 iken görünür, değilse gizle)
-execute if entity @a[scores={quest_stage=0}] run bossbar set ornek:quest players @a[scores={quest_stage=0}]
-execute if entity @a[scores={quest_stage=0}] run bossbar set ornek:quest visible true
-execute unless entity @a[scores={quest_stage=0}] run bossbar set ornek:quest visible false
+# Eğer quest_stage yoksa 0 yap (ilk görev otomatik başlasın)
+execute as @a unless score @s quest_stage matches 0.. run scoreboard players set @s quest_stage 0
 
-# Değer güncelle (her oyuncu farklı olabileceği için ilk eşleşen referans; basit model)
-execute as @a[scores={quest_stage=0}] run bossbar set ornek:quest value 0
-execute as @a[scores={quest_stage=0}] store result bossbar ornek:quest value run scoreboard players get @s oaklog
-execute if entity @a[scores={quest_stage=0}] run bossbar set ornek:quest name {"text":"Mevcut Görev: Odun Topla","color":"yellow"}
+# Görev satırı oluştur / güncelle: 10_Odun_Kir
+execute as @a[scores={quest_stage=0}] run scoreboard players operation 10_Odun_Kir quest_board = @s oaklog
 
-# Görev tamamlandıysa (10 veya üstü) bir kez stage ilerlet
+# Görev tamamlandıysa stage ilerlet
 execute as @a[scores={quest_stage=0,oaklog=10..}] run function ornek:quests/wood10_complete
